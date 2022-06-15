@@ -1,0 +1,3248 @@
+{
+	"info": {
+		"_postman_id": "1cc22685-ce20-4cc7-849d-c38b82dc4745",
+		"name": "final-rashj",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9969651"
+	},
+	"item": [
+		{
+			"name": "Get Users / Get All Users / Errors for Delete",
+			"item": [
+				{
+					"name": "get all users 200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"200 status code\", function () {\r",
+									"    //Check for 200 status code\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/users",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "405 users Get/:id, Patch, Put, Delete",
+			"item": [
+				{
+					"name": "delete all users 405",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"405 status code\", function () {\r",
+									"    //Check for 405 status code\r",
+									"    pm.response.to.have.status(405);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/users",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user1 405",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"405 status code\", function () {\r",
+									"    //Check for 405 status code\r",
+									"    pm.response.to.have.status(405);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/users/{{user_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"users",
+								"{{user_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put user1 405",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"405 status code\", function () {\r",
+									"    //Check for 405 status code\r",
+									"    pm.response.to.have.status(405);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/users/{{user_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"users",
+								"{{user_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch user1 405",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"405 status code\", function () {\r",
+									"    //Check for 405 status code\r",
+									"    pm.response.to.have.status(405);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/users/{{user_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"users",
+								"{{user_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user1 405",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"405 status code\", function () {\r",
+									"    //Check for 405 status code\r",
+									"    pm.response.to.have.status(405);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/users/{{user_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"users",
+								"{{user_id1}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Projects Test Rejected by wrong or missing JWT",
+			"item": [
+				{
+					"name": "add Project1 by jwt1 201",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"project_id1\", pm.response.json()[\"id\"]);\r",
+									"\r",
+									"pm.test(\"201 status code\", function () {\r",
+									"    //Check for 201 status code\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"content is valid\", function () {\r",
+									"   //Check if the response content is valid and matches the expected values\r",
+									"   pm.expect(pm.response.json()[\"name\"]).to.eq(\"Issue API\");\r",
+									"   pm.expect(pm.response.json()[\"description\"]).to.eq(\"Project and Issue Tracking API\");\r",
+									"   pm.expect(pm.response.json()[\"date\"]).to.eq(\"5/25/22\");\r",
+									"   pm.expect(pm.response.json()[\"issues\"]).to.deep.equal([]);\r",
+									"   pm.expect(pm.response.json()[\"user_id\"]).to.eq(pm.environment.get(\"user_id1\"));\r",
+									"   //Check if the self url is correct\r",
+									"   const self_url = pm.environment.get(\"app_url\") + \"/projects/\" + pm.response.json()[\"id\"];\r",
+									"   pm.expect(pm.response.json()[\"self\"]).to.eq(self_url);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Issue API\",\r\n    \"description\": \"Project and Issue Tracking API\",\r\n    \"date\": \"5/25/22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Project1 no JWT 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"401 status code\", function () {\r",
+									"    //Check for 401 status code\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Project1 by jwt2 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"401 status code\", function () {\r",
+									"    //Check for 401 status code\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt2}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Project1 accept not set 406",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"406 status code\", function () {\r",
+									"    //Check for 406 status code\r",
+									"    pm.response.to.have.status(406);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all projects no JWT 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"401 status code\", function () {\r",
+									"    //Check for 401 status code\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all projects accept not set 406",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"406 status code\", function () {\r",
+									"    //Check for 406 status code\r",
+									"    pm.response.to.have.status(406);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add Project duplicate name by jwt1 403",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"403 status code\", function () {\r",
+									"    //Check for 403 status code\r",
+									"    pm.response.to.have.status(403);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Issue API\",\r\n    \"description\": \"Dupilcate Project and Issue Tracking API\",\r\n    \"date\": \"5/27/22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get invalid_project_id 404",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"404 status code\", function () {\r",
+									"    //Check for 404 status code\r",
+									"    pm.response.to.have.status(404);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{invalid_project_id}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{invalid_project_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Adding 5 more projects to user1 to show pagination",
+			"item": [
+				{
+					"name": "add Project2 by jwt1 201",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"project_id2\", pm.response.json()[\"id\"]);\r",
+									"\r",
+									"pm.test(\"201 status code\", function () {\r",
+									"    //Check for 201 status code\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"content is valid\", function () {\r",
+									"   //Check if the response content is valid and matches the expected values\r",
+									"   pm.expect(pm.response.json()[\"name\"]).to.eq(\"Second Project\");\r",
+									"   pm.expect(pm.response.json()[\"description\"]).to.eq(\"This is the second project for user1\");\r",
+									"   pm.expect(pm.response.json()[\"date\"]).to.eq(\"5/31/22\");\r",
+									"   pm.expect(pm.response.json()[\"issues\"]).to.deep.equal([]);\r",
+									"   pm.expect(pm.response.json()[\"user_id\"]).to.eq(pm.environment.get(\"user_id1\"));\r",
+									"   //Check if the self url is correct\r",
+									"   const self_url = pm.environment.get(\"app_url\") + \"/projects/\" + pm.response.json()[\"id\"];\r",
+									"   pm.expect(pm.response.json()[\"self\"]).to.eq(self_url);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Second Project\",\r\n    \"description\": \"This is the second project for user1\",\r\n    \"date\": \"5/31/22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add Project1b by jwt2 201",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"project_id1b\", pm.response.json()[\"id\"]);\r",
+									"\r",
+									"pm.test(\"201 status code\", function () {\r",
+									"    //Check for 201 status code\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"content is valid\", function () {\r",
+									"   //Check if the response content is valid and matches the expected values\r",
+									"   pm.expect(pm.response.json()[\"name\"]).to.eq(\"User2 Project\");\r",
+									"   pm.expect(pm.response.json()[\"description\"]).to.eq(\"This is the first project for user2\");\r",
+									"   pm.expect(pm.response.json()[\"date\"]).to.eq(\"5/31/22\");\r",
+									"   pm.expect(pm.response.json()[\"issues\"]).to.deep.equal([]);\r",
+									"   pm.expect(pm.response.json()[\"user_id\"]).to.eq(pm.environment.get(\"user_id2\"));\r",
+									"   //Check if the self url is correct\r",
+									"   const self_url = pm.environment.get(\"app_url\") + \"/projects/\" + pm.response.json()[\"id\"];\r",
+									"   pm.expect(pm.response.json()[\"self\"]).to.eq(self_url);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt2}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"User2 Project\",\r\n    \"description\": \"This is the first project for user2\",\r\n    \"date\": \"5/31/22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add Project3 by jwt1 201",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"project_id3\", pm.response.json()[\"id\"]);\r",
+									"\r",
+									"pm.test(\"201 status code\", function () {\r",
+									"    //Check for 201 status code\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"content is valid\", function () {\r",
+									"   //Check if the response content is valid and matches the expected values\r",
+									"   pm.expect(pm.response.json()[\"name\"]).to.eq(\"Third Project\");\r",
+									"   pm.expect(pm.response.json()[\"description\"]).to.eq(\"This is the third project for user1\");\r",
+									"   pm.expect(pm.response.json()[\"date\"]).to.eq(\"5/31/22\");\r",
+									"   pm.expect(pm.response.json()[\"issues\"]).to.deep.equal([]);\r",
+									"   pm.expect(pm.response.json()[\"user_id\"]).to.eq(pm.environment.get(\"user_id1\"));\r",
+									"   //Check if the self url is correct\r",
+									"   const self_url = pm.environment.get(\"app_url\") + \"/projects/\" + pm.response.json()[\"id\"];\r",
+									"   pm.expect(pm.response.json()[\"self\"]).to.eq(self_url);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Third Project\",\r\n    \"description\": \"This is the third project for user1\",\r\n    \"date\": \"5/31/22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add Project4 by jwt1 201",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"project_id4\", pm.response.json()[\"id\"]);\r",
+									"\r",
+									"pm.test(\"201 status code\", function () {\r",
+									"    //Check for 201 status code\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"content is valid\", function () {\r",
+									"   //Check if the response content is valid and matches the expected values\r",
+									"   pm.expect(pm.response.json()[\"name\"]).to.eq(\"Fourth Project\");\r",
+									"   pm.expect(pm.response.json()[\"description\"]).to.eq(\"This is the fourth project for user1\");\r",
+									"   pm.expect(pm.response.json()[\"date\"]).to.eq(\"5/31/22\");\r",
+									"   pm.expect(pm.response.json()[\"issues\"]).to.deep.equal([]);\r",
+									"   pm.expect(pm.response.json()[\"user_id\"]).to.eq(pm.environment.get(\"user_id1\"));\r",
+									"   //Check if the self url is correct\r",
+									"   const self_url = pm.environment.get(\"app_url\") + \"/projects/\" + pm.response.json()[\"id\"];\r",
+									"   pm.expect(pm.response.json()[\"self\"]).to.eq(self_url);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Fourth Project\",\r\n    \"description\": \"This is the fourth project for user1\",\r\n    \"date\": \"5/31/22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add Project5 by jwt1 201",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"project_id5\", pm.response.json()[\"id\"]);\r",
+									"\r",
+									"pm.test(\"201 status code\", function () {\r",
+									"    //Check for 201 status code\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"content is valid\", function () {\r",
+									"   //Check if the response content is valid and matches the expected values\r",
+									"   pm.expect(pm.response.json()[\"name\"]).to.eq(\"Fifth Project\");\r",
+									"   pm.expect(pm.response.json()[\"description\"]).to.eq(\"This is the fifth project for user1\");\r",
+									"   pm.expect(pm.response.json()[\"date\"]).to.eq(\"5/31/22\");\r",
+									"   pm.expect(pm.response.json()[\"issues\"]).to.deep.equal([]);\r",
+									"   pm.expect(pm.response.json()[\"user_id\"]).to.eq(pm.environment.get(\"user_id1\"));\r",
+									"   //Check if the self url is correct\r",
+									"   const self_url = pm.environment.get(\"app_url\") + \"/projects/\" + pm.response.json()[\"id\"];\r",
+									"   pm.expect(pm.response.json()[\"self\"]).to.eq(self_url);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Fifth Project\",\r\n    \"description\": \"This is the fifth project for user1\",\r\n    \"date\": \"5/31/22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add Project6 by jwt1 201",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"project_id6\", pm.response.json()[\"id\"]);\r",
+									"\r",
+									"pm.test(\"201 status code\", function () {\r",
+									"    //Check for 201 status code\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"content is valid\", function () {\r",
+									"   //Check if the response content is valid and matches the expected values\r",
+									"   pm.expect(pm.response.json()[\"name\"]).to.eq(\"Sixth Project\");\r",
+									"   pm.expect(pm.response.json()[\"description\"]).to.eq(\"This is the sixth project for user1\");\r",
+									"   pm.expect(pm.response.json()[\"date\"]).to.eq(\"5/31/22\");\r",
+									"   pm.expect(pm.response.json()[\"issues\"]).to.deep.equal([]);\r",
+									"   pm.expect(pm.response.json()[\"user_id\"]).to.eq(pm.environment.get(\"user_id1\"));\r",
+									"   //Check if the self url is correct\r",
+									"   const self_url = pm.environment.get(\"app_url\") + \"/projects/\" + pm.response.json()[\"id\"];\r",
+									"   pm.expect(pm.response.json()[\"self\"]).to.eq(self_url);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sixth Project\",\r\n    \"description\": \"This is the sixth project for user1\",\r\n    \"date\": \"5/31/22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all projects by jwt1 200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"200 status code\", function () {\r",
+									"    //Check for 200 status code\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"let jsonData = pm.response.json();\r",
+									"pm.environment.set(\"next_projects_url\", jsonData.projects[4].next);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get next projects cursor by jwt1 200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"200 status code\", function () {\r",
+									"    //Check for 200 status code\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{next_projects_url}}",
+							"host": [
+								"{{next_projects_url}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post/Put/Patch Issue",
+			"item": [
+				{
+					"name": "add Issue1 for Project1 201",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"issue_id1\", pm.response.json()[\"id\"]);\r",
+									"\r",
+									"pm.test(\"201 status code\", function () {\r",
+									"    //Check for 201 status code\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"content is valid\", function () {\r",
+									"    //Check if the response content is valid and matches the expected values\r",
+									"    pm.expect(pm.response.json()[\"name\"]).to.eq(\"Wrong Status Code\");\r",
+									"    pm.expect(pm.response.json()[\"description\"]).to.eq(\"POST Status Code received 200 instead of 201 from issue endpoint\");\r",
+									"    pm.expect(pm.response.json()[\"priority\"]).to.eq(\"low\");\r",
+									"    pm.expect(pm.response.json()[\"project_id\"]).to.eq(pm.environment.get(\"project_id1\"));\r",
+									"    //Check if the self url is correct\r",
+									"    const self_url = pm.environment.get(\"app_url\") + \"/issues/\" + pm.response.json()[\"id\"];\r",
+									"    pm.expect(pm.response.json()[\"self\"]).to.eq(self_url);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Wrong Status Code\",\r\n    \"description\": \"POST Status Code received 200 instead of 201 from issue endpoint\",\r\n    \"priority\": \"low\",\r\n    \"project_id\": \"{{project_id1}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/issues/",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"issues",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Project1 by jwt1 200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"200 status code\", function () {\r",
+									"    //Check for 200 status code\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"content is valid\", function () {\r",
+									"   //Check if the response content is valid and matches the expected values\r",
+									"   pm.expect(pm.response.json()[\"name\"]).to.eq(\"Issue API\");\r",
+									"   pm.expect(pm.response.json()[\"description\"]).to.eq(\"Project and Issue Tracking API\");\r",
+									"   pm.expect(pm.response.json()[\"date\"]).to.eq(\"5/25/22\");\r",
+									"   //Check if the self url is correct\r",
+									"   const self_url = pm.environment.get(\"app_url\") + \"/projects/\" + pm.response.json()[\"id\"];\r",
+									"   pm.expect(pm.response.json()[\"self\"]).to.eq(self_url);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Issue for Project1 200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"200 status code\", function () {\r",
+									"    //Check for 200 status code\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"content is valid\", function () {\r",
+									"    //Check if the response content is valid and matches the expected values\r",
+									"    pm.expect(pm.response.json()[\"id\"]).to.eq(pm.environment.get(\"issue_id1\"))\r",
+									"    pm.expect(pm.response.json()[\"name\"]).to.eq(\"Wrong Status Code\");\r",
+									"    pm.expect(pm.response.json()[\"description\"]).to.eq(\"POST Status Code received 200 instead of 201 from issue endpoint\");\r",
+									"    pm.expect(pm.response.json()[\"priority\"]).to.eq(\"low\");\r",
+									"    pm.expect(pm.response.json()[\"project_id\"]).to.eq(pm.environment.get(\"project_id1\"));\r",
+									"    //Check if the self url is correct\r",
+									"    const self_url = pm.environment.get(\"app_url\") + \"/issues/\" + pm.response.json()[\"id\"];\r",
+									"    pm.expect(pm.response.json()[\"self\"]).to.eq(self_url);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/issues/{{issue_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"issues",
+								"{{issue_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all Issues 200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"200 status code\", function () {\r",
+									"    //Check for 201 status code\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/issues/{{issue_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"issues",
+								"{{issue_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put Issue1 200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"200 status code\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"content is valid\", function () {\r",
+									"    //Check if the response content is valid and matches the expected values\r",
+									"    pm.expect(pm.response.json()[\"name\"]).to.eq(\"Wrong Status Code Put Test\");\r",
+									"    pm.expect(pm.response.json()[\"description\"]).to.eq(\"POST Status Code received 200 instead of 201 from issue endpoint\");\r",
+									"    pm.expect(pm.response.json()[\"priority\"]).to.eq(\"low\");\r",
+									"    pm.expect(pm.response.json()[\"project_id\"]).to.eq(pm.environment.get(\"project_id1\"));\r",
+									"    //Check if the self url is correct\r",
+									"    const self_url = pm.environment.get(\"app_url\") + \"/issues/\" + pm.response.json()[\"id\"];\r",
+									"    pm.expect(pm.response.json()[\"self\"]).to.eq(self_url);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Wrong Status Code Put Test\",\r\n    \"description\": \"POST Status Code received 200 instead of 201 from issue endpoint\",\r\n    \"priority\": \"low\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/issues/{{issue_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"issues",
+								"{{issue_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch Issue1 200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"200 status code\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"content is valid\", function () {\r",
+									"    //Check if the response content is valid and matches the expected values\r",
+									"    pm.expect(pm.response.json()[\"name\"]).to.eq(\"Wrong Status Code Put Test\");\r",
+									"    pm.expect(pm.response.json()[\"description\"]).to.eq(\"POST Status Code received 404 instead of 201 from issue endpoint\");\r",
+									"    pm.expect(pm.response.json()[\"priority\"]).to.eq(\"medium\");\r",
+									"    pm.expect(pm.response.json()[\"project_id\"]).to.eq(pm.environment.get(\"project_id1\"));\r",
+									"    //Check if the self url is correct\r",
+									"    const self_url = pm.environment.get(\"app_url\") + \"/issues/\" + pm.response.json()[\"id\"];\r",
+									"    pm.expect(pm.response.json()[\"self\"]).to.eq(self_url);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"POST Status Code received 404 instead of 201 from issue endpoint\",\r\n    \"priority\": \"medium\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/issues/{{issue_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"issues",
+								"{{issue_id1}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Put/Patch Project1",
+			"item": [
+				{
+					"name": "put Project1 by jwt1 200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"200 status code\", function () {\r",
+									"    //Check for 200 status code\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"content is valid\", function () {\r",
+									"   //Check if the response content is valid and matches the expected values\r",
+									"   pm.expect(pm.response.json()[\"name\"]).to.eq(\"Update Issue API\");\r",
+									"   pm.expect(pm.response.json()[\"description\"]).to.eq(\"Project and Issue Tracking API Updated\");\r",
+									"   pm.expect(pm.response.json()[\"date\"]).to.eq(\"5/27/22\");\r",
+									"\r",
+									"   //Check if the self url is correct\r",
+									"   const self_url = pm.environment.get(\"app_url\") + \"/projects/\" + pm.response.json()[\"id\"];\r",
+									"   pm.expect(pm.response.json()[\"self\"]).to.eq(self_url);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Update Issue API\",\r\n    \"description\": \"Project and Issue Tracking API Updated\",\r\n    \"date\": \"5/27/22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put Project1 by jwt2 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"401 status code\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt2}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Update Issue API\",\r\n    \"description\": \"Project and Issue Tracking API Updated\",\r\n    \"date\": \"5/27/22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch Project1 by jwt1 200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"200 status code\", function () {\r",
+									"    //Check for 200 status code\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"content is valid\", function () {\r",
+									"   //Check if the response content is valid and matches the expected values\r",
+									"   pm.expect(pm.response.json()[\"name\"]).to.eq(\"Update Issue API\");\r",
+									"   pm.expect(pm.response.json()[\"description\"]).to.eq(\"Project and Issue Tracking API Patch\");\r",
+									"   pm.expect(pm.response.json()[\"date\"]).to.eq(\"5/27/22\");\r",
+									"\r",
+									"   //Check if the self url is correct\r",
+									"   const self_url = pm.environment.get(\"app_url\") + \"/projects/\" + pm.response.json()[\"id\"];\r",
+									"   pm.expect(pm.response.json()[\"self\"]).to.eq(self_url);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Project and Issue Tracking API Patch\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch Project1 by jwt2 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"401 status code\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt2}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Project and Issue Tracking API Patch\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Project1 by jwt2 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"\r",
+									"pm.test(\"401 status code\", function () {\r",
+									"    //Check for 201 status code\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt2}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Issue API\",\r\n    \"description\": \"Project and Issue Tracking API\",\r\n    \"date\": \"5/25/22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id1}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "405 tests",
+			"item": [
+				{
+					"name": "put /projects without id 405",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"\r",
+									"pm.test(\"405 status code\", function () {\r",
+									"    //Check for 405 status code\r",
+									"    pm.response.to.have.status(405);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put /issues without id 405",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"\r",
+									"pm.test(\"405 status code\", function () {\r",
+									"    //Check for 405 status code\r",
+									"    pm.response.to.have.status(405);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/issues",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"issues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch /projects without id 405",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"\r",
+									"pm.test(\"405 status code\", function () {\r",
+									"    //Check for 405 status code\r",
+									"    pm.response.to.have.status(405);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch /issues without id 405",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"\r",
+									"pm.test(\"405 status code\", function () {\r",
+									"    //Check for 405 status code\r",
+									"    pm.response.to.have.status(405);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/issues",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"issues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete /projects without id 405",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"\r",
+									"pm.test(\"405 status code\", function () {\r",
+									"    //Check for 405 status code\r",
+									"    pm.response.to.have.status(405);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete /issues without id 405",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"\r",
+									"pm.test(\"405 status code\", function () {\r",
+									"    //Check for 405 status code\r",
+									"    pm.response.to.have.status(405);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/issues",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"issues"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Remove all Issues and projects",
+			"item": [
+				{
+					"name": "delete Issue1 204",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.test(\"204 status code\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/issues/{{issue_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"issues",
+								"{{issue_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Project1 by jwt1 204",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"\r",
+									"pm.test(\"204 status code\", function () {\r",
+									"    //Check for 201 status code\r",
+									"    pm.response.to.have.status(204);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Issue API\",\r\n    \"description\": \"Project and Issue Tracking API\",\r\n    \"date\": \"5/25/22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Project2 by jwt1 204",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"\r",
+									"pm.test(\"204 status code\", function () {\r",
+									"    //Check for 201 status code\r",
+									"    pm.response.to.have.status(204);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id2}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id2}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Project3 by jwt1 204",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"204 status code\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id3}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id3}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Project4 by jwt1 204",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"204 status code\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id4}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id4}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Project5 by jwt1 204",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"204 status code\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id5}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id5}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Project6 by jwt1 204",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"204 status code\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id6}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id6}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Project1b by jwt2 204",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"\r",
+									"pm.test(\"204 status code\", function () {\r",
+									"    //Check for 201 status code\r",
+									"    pm.response.to.have.status(204);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt2}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id1b}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id1b}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Confirm Issues and Projects Deleted 404 testing",
+			"item": [
+				{
+					"name": "get Issue1 404 Does Not Exist",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"404 status code\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/issues/{{issue_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"issues",
+								"{{issue_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Project1 404 Does Not Exist",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"404 status code\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id1}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Project2 404 Does Not Exist",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"404 status code\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{app_url}}/projects/{{project_id2}}",
+							"host": [
+								"{{app_url}}"
+							],
+							"path": [
+								"projects",
+								"{{project_id2}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
