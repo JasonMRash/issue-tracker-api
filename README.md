@@ -1,7 +1,4 @@
 # issue-tracker-api
-# Create User @ https://final-rashj.uc.r.appspot.com
-
-# API @ https://final-rashj.uc.r.appspot.com
 
 # Final Project: API Spec
 
